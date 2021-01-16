@@ -1,0 +1,42 @@
+For kafka - 
+
+$ cd /usr/local/etc/zookeeper
+
+Tab 1:
+$ zookeeper-server-start /usr/local/etc/kafka/zookeeper.properties
+
+Tab 2:
+$ kafka-server-start /usr/local/etc/kafka/server.properties
+
+Tab 3:
+$ kafka-console-producer broker-list localhost:9093 --topic test
+
+Tab 4:
+$ kafka-console-consumer --bootstrap-server localhost:9093 --topic test
+
+Tab 5:
+-- For this practice project
+$ kafka-console-consumer --bootstrap-server localhost:9093 --topic allAboutUsersTopic
+
+
+
+
+
+
+
+For mySql - 
+
+$ mysql -u root
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 8.0.22 Homebrew
+
+Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> 
